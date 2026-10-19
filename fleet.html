@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plant & Fleet | Mkaka Construction</title>
+  <meta name="description" content="One of Malawi’s largest private fleets of construction plant and equipment — Mkaka Construction.">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="topbar"><div class="container"><div>📞 <a href="tel:+265999966532">+265 999 96 65 32</a> · ✉ <a href="mailto:info@mkakaconstruction.com">info@mkakaconstruction.com</a></div><div>Mkaka House, Blantyre</div></div></div>
+  <header class="header" id="header">
+    <div class="container">
+      <a href="index.html" class="logo"><img src="images/logo.jpg" alt="Mkaka"><div class="logo-text">MKAKA<span>CONSTRUCTION</span></div></a>
+      <nav class="nav" id="nav">
+        <a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="projects.html">Projects</a><a href="fleet.html" class="active">Fleet</a>
+        <a href="contact.html" class="btn btn-primary" style="padding:10px 18px">Get a Quote</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <div class="page-hero">
+    <div class="container">
+      <h1>Plant & Equipment</h1>
+      <p>One of Malawi’s largest private fleets — ready for rapid mobilisation.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="sec-head center">
+        <div class="sec-tag">Our Power</div>
+        <h2>Heavy plant & specialised equipment</h2>
+        <p>Sophisticated machinery lets us mobilise at short notice and deliver faster, more cost-effectively.</p>
+      </div>
+      <div class="fleet-grid">
+        <div class="fleet-item">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 17H3a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v9a2 2 0 0 1-2 2h-2"/><circle cx="7.5" cy="17.5" r="2.5"/><circle cx="16.5" cy="17.5" r="2.5"/></svg></div>
+          <h4>Excavators & Loaders</h4>
+          <p>Heavy earthmoving capacity</p>
+        </div>
+        <div class="fleet-item">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M6 6V4h12v2M2 12h20"/></svg></div>
+          <h4>Graders & Rollers</h4>
+          <p>Precision road works</p>
+        </div>
+        <div class="fleet-item">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v12"/><path d="M14 18h6a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2h-6"/><circle cx="6.5" cy="18.5" r="2.5"/><circle cx="17.5" cy="18.5" r="2.5"/></svg></div>
+          <h4>Tippers & Trucks</h4>
+          <p>Material logistics</p>
+        </div>
+        <div class="fleet-item">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2v8M8 6h8"/><path d="M5 14h14v6a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-6z"/><path d="M8 14V9M16 14V9"/></svg></div>
+          <h4>Cranes & Specialised</h4>
+          <p>Complex lifting solutions</p>
+        </div>
+      </div>
+      <div style="max-width:640px;margin:48px auto 0;padding:28px;background:#fff;border:1px solid var(--line);border-radius:14px;text-align:center">
+        <p style="color:var(--muted);font-size:1rem">Rapid deployment capability is one of our key competitive advantages. We mobilise plant and equipment at short notice for major projects across the country.</p>
+        <a href="contact.html" class="btn btn-primary" style="margin-top:20px">Enquire About Plant Hire</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="logo" style="color:#fff"><div class="logo-text" style="color:#fff">MKAKA<span style="color:rgba(255,255,255,0.55)">CONSTRUCTION</span></div></a>
+          <p>Building Malawi’s infrastructure with integrity since 1993.</p>
+        </div>
+        <div class="footer-links">
+          <div><h5>Company</h5><a href="about.html">About</a><a href="services.html">Services</a><a href="projects.html">Projects</a><a href="fleet.html">Fleet</a></div>
+          <div><h5>Connect</h5><a href="contact.html">Contact</a><a href="mailto:info@mkakaconstruction.com">Email</a></div>
+          <div><h5>Legal</h5><p style="font-size:0.85rem;opacity:0.7">NCIC Unlimited Category</p></div>
+        </div>
+      </div>
+      <div class="footer-bottom"><p>© 2026 Mkaka Construction Company Limited.</p><p>Civil Engineering · Building Works</p></div>
+    </div>
+  </footer>
+  <script>
+    const header=document.getElementById('header'),hamburger=document.getElementById('hamburger'),nav=document.getElementById('nav');
+    window.addEventListener('scroll',()=>header.classList.toggle('scrolled',window.scrollY>30));
+    hamburger.addEventListener('click',()=>nav.classList.toggle('open'));
+    nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
+  </script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services | Mkaka Construction</title>
+  <meta name="description" content="Civil infrastructure, building works and plant mobilisation services from Mkaka Construction, Malawi.">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="topbar"><div class="container"><div>📞 <a href="tel:+265999966532">+265 999 96 65 32</a> · ✉ <a href="mailto:info@mkakaconstruction.com">info@mkakaconstruction.com</a></div><div>Mkaka House, Blantyre</div></div></div>
+  <header class="header" id="header">
+    <div class="container">
+      <a href="index.html" class="logo"><img src="images/logo.jpg" alt="Mkaka"><div class="logo-text">MKAKA<span>CONSTRUCTION</span></div></a>
+      <nav class="nav" id="nav">
+        <a href="index.html">Home</a><a href="about.html">About</a><a href="services.html" class="active">Services</a><a href="projects.html">Projects</a><a href="fleet.html">Fleet</a>
+        <a href="contact.html" class="btn btn-primary" style="padding:10px 18px">Get a Quote</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <div class="page-hero">
+    <div class="container">
+      <h1>Our Services</h1>
+      <p>Civil engineering, building works and rapid plant mobilisation.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-num">01</div>
+          <h3>Civil Infrastructure</h3>
+          <p>Roads (earth rehabilitation and high-spec bitumen), bridges, drainage systems and communication tower installation across Malawi.</p>
+          <ul>
+            <li>Road rehabilitation & surfacing</li>
+            <li>Bridge construction</li>
+            <li>Irrigation schemes</li>
+            <li>Earth dams</li>
+            <li>Communication towers</li>
+          </ul>
+          <a href="contact.html" class="service-link">Enquire →</a>
+        </div>
+        <div class="service-card">
+          <div class="service-num">02</div>
+          <h3>Building Works</h3>
+          <p>Large-scale commercial complexes, medical centres, schools, markets and structural steel applications delivered to the highest standards.</p>
+          <ul>
+            <li>Healthcare facilities</li>
+            <li>Educational institutions</li>
+            <li>Commercial complexes</li>
+            <li>Structural steel works</li>
+            <li>Markets & public buildings</li>
+          </ul>
+          <a href="contact.html" class="service-link">Enquire →</a>
+        </div>
+        <div class="service-card">
+          <div class="service-num">03</div>
+          <h3>Plant & Mobilisation</h3>
+          <p>One of Malawi’s largest private fleets of sophisticated heavy-plant machinery. Deploy onto major projects with minimal notice.</p>
+          <ul>
+            <li>Heavy earthmoving</li>
+            <li>Specialised equipment</li>
+            <li>24/7 project readiness</li>
+            <li>Nationwide reach</li>
+          </ul>
+          <a href="fleet.html" class="service-link">View fleet →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-banner">
+    <div class="container" style="position:relative">
+      <h2>Need a capability we haven’t listed?</h2>
+      <p>Talk to us — we take on work of any size and multiple projects at once.</p>
+      <a href="contact.html" class="btn btn-white">Start a Conversation</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="logo" style="color:#fff"><div class="logo-text" style="color:#fff">MKAKA<span style="color:rgba(255,255,255,0.55)">CONSTRUCTION</span></div></a>
+          <p>Building Malawi’s infrastructure with integrity since 1993.</p>
+        </div>
+        <div class="footer-links">
+          <div><h5>Company</h5><a href="about.html">About</a><a href="services.html">Services</a><a href="projects.html">Projects</a><a href="fleet.html">Fleet</a></div>
+          <div><h5>Connect</h5><a href="contact.html">Contact</a><a href="mailto:info@mkakaconstruction.com">Email</a></div>
+          <div><h5>Legal</h5><p style="font-size:0.85rem;opacity:0.7">NCIC Unlimited Category</p></div>
+        </div>
+      </div>
+      <div class="footer-bottom"><p>© 2026 Mkaka Construction Company Limited.</p><p>Civil Engineering · Building Works</p></div>
+    </div>
+  </footer>
+  <script>
+    const header=document.getElementById('header'),hamburger=document.getElementById('hamburger'),nav=document.getElementById('nav');
+    window.addEventListener('scroll',()=>header.classList.toggle('scrolled',window.scrollY>30));
+    hamburger.addEventListener('click',()=>nav.classList.toggle('open'));
+    nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
+  </script>
+</body>
+</html>
